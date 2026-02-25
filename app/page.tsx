@@ -19,7 +19,7 @@ export default function Home() {
             setCity(c);
           }}
         />
-
+        <WeatherAlert province={province} city={city} />
         <LocationInfo province={province} city={city} />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           
