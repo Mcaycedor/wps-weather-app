@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Header from "./Header/Header";
 import LocationInfo from "./LocationInfo/LocationInfo";
+import WeatherAlert from "./components/WeatherAlert/WeatherAlert";
 
 export default function Home() {
   const [province, setProvince] = useState("");
