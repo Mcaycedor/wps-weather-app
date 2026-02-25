@@ -7,41 +7,39 @@ const WeatherAlert: React.FC<WeatherAlertProps> = ({ province, city }) => {
   if (!province || !city) return null;
 
   let message = "";
-  let backgroundColor = "#e3f2fd"; // default light blue
+  let color = "#e3f2fd"; // default blue
 
   if (province === "Quebec") {
-    message = "Cold temperatures are common during winter ❄️";
-    backgroundColor = "#d0ebff";
-  } 
-  else if (province === "Alberta") {
-    message = "Strong winds may occur in this region 💨";
-    backgroundColor = "#fff3cd";
-  } 
-  else if (province === "BritishColumbia") {
-    message = "Frequent rainfall expected 🌧";
-    backgroundColor = "#d1ecf1";
-  } 
-  else if (province === "Ontario") {
-    message = "Weather conditions vary throughout the year 🌤";
-    backgroundColor = "#e2f0cb";
-  } 
-  else {
-    message = "Check local forecasts for detailed weather information.";
+    message = "Cold winter conditions are common in this region ❄️";
+    color = "#d0ebff";
+  } else if (province === "Alberta") {
+    message = "Strong winds may occur throughout the year 💨";
+    color = "#fff3cd";
+  } else if (province === "BritishColumbia") {
+    message = "Rainfall is frequent on the west coast 🌧";
+    color = "#d1ecf1";
+  } else if (province === "Ontario") {
+    message = "Weather varies significantly between seasons 🌤";
+    color = "#e2f0cb";
+  } else {
+    message = "Weather conditions may vary in this region.";
   }
 
   return (
     <div
       style={{
-        backgroundColor,
+        backgroundColor: color,
         padding: "12px",
-        margin: "15px",
+        margin: "15px 0",
         borderRadius: "6px",
         textAlign: "center",
         border: "1px solid #ccc",
+        width: "100%",
+        maxWidth: "600px",
       }}
     >
-      <strong>Weather Information for {city}, {province}</strong>
-      <p style={{ marginTop: "5px" }}>{message}</p>
+      <strong>Weather Alert for {city}, {province}</strong>
+      <p style={{ marginTop: "6px" }}>{message}</p>
     </div>
   );
 };
