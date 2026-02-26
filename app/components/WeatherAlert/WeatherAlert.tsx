@@ -11,16 +11,16 @@ const WeatherAlert: React.FC<WeatherAlertProps> = ({ province, city }) => {
 
   if (province === "Quebec") {
     message = "Cold winter conditions are common in this region ❄️";
-    color = "#d0ebff";
+    color = "#0c3250";
   } else if (province === "Alberta") {
     message = "Strong winds may occur throughout the year 💨";
-    color = "#fff3cd";
+    color = "#d3a81b";
   } else if (province === "BritishColumbia") {
     message = "Rainfall is frequent on the west coast 🌧";
-    color = "#d1ecf1";
+    color = "#c74c13";
   } else if (province === "Ontario") {
     message = "Weather varies significantly between seasons 🌤";
-    color = "#e2f0cb";
+    color = "#637a3d";
   } else {
     message = "Weather conditions may vary in this region.";
   }
