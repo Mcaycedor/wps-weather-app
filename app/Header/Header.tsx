@@ -31,17 +31,7 @@ const canadaData: Record<string, string[]> = {
     "Sudbury",
     "Thunder Bay"
   ],
-  BritishColumbia: [
-    "Vancouver",
-    "Victoria",
-    "Surrey",
-    "Burnaby",
-    "Richmond",
-    "Coquitlam",
-    "Kelowna",
-    "Kamloops"
-  ],
-  Alberta: [
+    Alberta: [
     "Calgary",
     "Edmonton",
     "Red Deer",
@@ -58,6 +48,17 @@ const canadaData: Record<string, string[]> = {
     "Saskatoon",
     "Regina",
     "Prince Albert"
+  ]
+  /*,
+  BritishColumbia: [
+    "Vancouver",
+    "Victoria",
+    "Surrey",
+    "Burnaby",
+    "Richmond",
+    "Coquitlam",
+    "Kelowna",
+    "Kamloops"
   ],
   NovaScotia: [
     "Halifax",
@@ -75,7 +76,7 @@ const canadaData: Record<string, string[]> = {
   ],
   PrinceEdwardIsland: [
     "Charlottetown"
-  ]
+  ]*/ 
 };
 
 
