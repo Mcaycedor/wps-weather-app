@@ -23,6 +23,7 @@ const WeatherAlert: React.FC<WeatherAlertProps> = ({ province, city }) => {
     color = "#637a3d";
   } else {
     message = "Weather conditions may vary in this region.";
+    color = "#b41308";
   }
 
   return (
