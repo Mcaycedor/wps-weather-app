@@ -11,7 +11,7 @@ const WeatherAlert: React.FC<WeatherAlertProps> = ({ province, city }) => {
 
   if (province === "Quebec") {
     message = "Cold winter conditions are common in this region ❄️";
-    color = "#0c3250";
+    color = "#3388c9";
   } else if (province === "Alberta") {
     message = "Strong winds may occur throughout the year 💨";
     color = "#d3a81b";
@@ -30,6 +30,7 @@ const WeatherAlert: React.FC<WeatherAlertProps> = ({ province, city }) => {
     <div
       style={{
         backgroundColor: color,
+        color: "white",
         padding: "12px",
         margin: "15px 0",
         borderRadius: "6px",
